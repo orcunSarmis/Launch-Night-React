@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage/LandingPage";
+import CreateEvent from "./components/CreateEvent/CreateEvent";
 
 import "./App.css";
 
@@ -11,6 +12,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/create" element={<CreateEvent />} />
         </Routes>
       </Router>
     </React.Fragment>
